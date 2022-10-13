@@ -41,7 +41,7 @@ const bloquearBtnAdd = computed(() => {
 
 <template>
   <div class="container text-center">
-    <h1>VUE DINAMICO</h1>
+    <h1 class="h1">VUE DINAMICO</h1>
     <h2 :class="classCounter">
       {{ counter }}
     </h2>
@@ -53,7 +53,7 @@ const bloquearBtnAdd = computed(() => {
         Add
       </button>
     </div>
-    <div>Numeros favoritos</div>
+    <p class="display-5">Numeros favoritos</p>
     <li v-for="numero in ArrayNumbers" :key="numero" class="list-group">
       <ul class="list-group-item">
         {{
